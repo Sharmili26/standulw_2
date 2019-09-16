@@ -23,8 +23,8 @@ set.rhs(shlp, rhs)
 set.constr.type(shlp, rep("<=", 6))
 
 #finally name the decision variables (column) and constaints (rows)
-lp.colnames <- c("P1L", "P1M", "P1S", "P2L", "P2M", "P2S")
-lp.colnames <- c("P1 Capacity", "P2 Capacity", "P3 Capacity", "P1 Storage","P2 Storage", "P3 Storage")
+lp.colnames <- c("X1a", "X1b", "X1c", "X2a", "X2b", "X2c")
+lp.colnames <- c("a1 Capacity", "a2 Capacity", "a3 Capacity", "a1 Storage","a2 Storage", "a3 Storage")
 dimnames(shlp) <- list(lp.rownames, lp.colnames)
 
 #view the linear program object to make sure it's correct
